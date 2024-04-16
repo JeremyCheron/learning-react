@@ -5,6 +5,7 @@ import {buttonVariants} from "@/components/ui/button";
 import {Icons} from "@/components/icons";
 import {MainNav} from "@/components/main-nav";
 import {MobileNav} from "@/components/mobile-nav";
+import {ModeToggle} from "@/components/mode-toggle";
 
 export function SiteHeader() {
     return <header className="sticky top-0 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -24,6 +25,7 @@ export function SiteHeader() {
                             <span className="sr-only">Twitter</span>
                         </div>
                     </Link>
+                    <ModeToggle />
                     <MobileNav />
                 </nav>
             </div>
